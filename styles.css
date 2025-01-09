@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     zoom:75%;
     font-family: Arial, sans-serif;
@@ -17,18 +16,18 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Keep it above other elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 header .logo img {
     height: 60px;
-    width: auto; /* Maintain logo aspect ratio */
+    width: auto; 
 }
 
 header nav {
-    flex-grow: 1; /* Allow navigation to expand */
+    flex-grow: 1; 
     text-align: right;
 }
 
@@ -51,31 +50,31 @@ header nav ul li a {
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
     white-space: nowrap;
-    font-size: 1.5rem; /* Increased font size */
-    font-weight: bold; /* Optional: Add bold styling for better visibility */
+    font-size: 1.5rem; 
+    font-weight: bold; 
 }
 
 header nav ul li a:hover {
-    background-color: #444; /* Highlight on hover */
+    background-color: #444; 
     color: #ffcc00;
     border-radius: 5px;
 }
 
 body {
-    padding-top: 80px; /* Prevent content overlap with fixed header */
+    padding-top: 80px; 
 }
 
 /* Home Section Styles */
 #home {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center; /* Vertically center the content */
-    text-align: left; /* Align text to the left */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds subtle overlay for better contrast */
+    justify-content: flex-start; 
+    align-items: center; 
+    text-align: left; 
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 /* Background Image */
@@ -85,15 +84,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire section */
-    z-index: -1; /* Place the image behind the content */
+    object-fit: cover; 
+    z-index: -1;
 }
 
 /* Home Content Styling */
 #home .home-content {
     z-index: 1;
     color: #fff;
-    font-family: 'Lora', serif; /* Updated font family */
+    font-family: 'Lora', serif; 
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);
     padding: 20px;
     max-width: 650px;
@@ -109,13 +108,13 @@ body {
 
 /* Home Content Header Styling */
 #home h1 {
-    font-size: 3.8rem; /* Slightly larger font size */
+    font-size: 3.8rem; 
     margin: 0;
-    font-weight: 700; /* Bold weight for better emphasis */
+    font-weight: 700; 
     line-height: 1.2;
     letter-spacing: 2px;
-    text-transform: uppercase; /* Optional for style */
-    animation: fadeInUp 1s ease-out; /* Added animation to title */
+    text-transform: uppercase; 
+    animation: fadeInUp 1s ease-out; 
 }
 
 /* Home Content Paragraph Styling */
@@ -124,19 +123,19 @@ body {
     margin: 15px 0 0;
     font-weight: 300;
     letter-spacing: 1.5px;
-    text-shadow: none; /* Removed shadow for the paragraph */
-    animation: fadeInUp 1.5s ease-out; /* Added animation to description */
+    text-shadow: none; 
+    animation: fadeInUp 1.5s ease-out; 
 }
 
 /* Button Styling */
 #home button {
     margin-top: 20px;
-    font-size: 1.3rem; /* Slightly bigger font for visibility */
-    padding: 15px 35px; /* Increased padding for bigger button */
-    background-color: #fff; /* Set background to white */
+    font-size: 1.3rem; 
+    padding: 15px 35px; 
+    background-color: #fff; 
     border: none;
-    border-radius: 8px; /* Increased border-radius for smooth rounded corners */
-    color: #333; /* Dark color for the text to contrast with white background */
+    border-radius: 8px; 
+    color: #333; 
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -144,9 +143,9 @@ body {
 
 /* Button Hover Effect */
 #home button:hover {
-    background-color: #f1f1f1; /* Lighter shade on hover */
-    color: #ff6600; /* Change text color to match the original button color */
-    transform: scale(1.1); /* Slightly stronger scaling effect */
+    background-color: #f1f1f1; 
+    color: #ff6600; 
+    transform: scale(1.1); 
 }
 
 
@@ -188,8 +187,8 @@ body {
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .about-content {
@@ -225,9 +224,9 @@ section img {
 /* Styling for the overall model container */
 .models {
     display: flex;
-    justify-content: flex-start; /* Align models horizontally */
-    gap: 40px; /* Space between models */
-    overflow-x: auto; /* Horizontal scrolling */
+    justify-content: flex-start; 
+    gap: 40px; 
+    overflow-x: auto; 
     padding: 10px 0;
     max-width: 100%;
 }
@@ -237,45 +236,45 @@ section img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px; /* Reduced width for better overall fitting */
-    height: 580px; /* Adjusted height to look balanced */
-    padding: 20px; /* Padding inside the box */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    background-color: #fff; /* Background color */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 350px; 
+    height: 580px; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; 
 }
 
 /* Hover effect on model */
 .models .model:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
-    background-color: #f5f5f5; /* Slight background change on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    background-color: #f5f5f5; 
 }
 
 /* Styling for model images */
 .models .model img {
-    width: 100%; /* Adjust image width to the container */
-    height: 200px; /* Reduced height for proportional balance */
-    object-fit: cover; /* Ensure the image fits well without distortion */
-    border-radius: 5px; /* Rounded corners for images */
-    margin-bottom: 15px; /* Margin below image */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    margin-bottom: 15px; 
 }
 
 /* Styling for table inside each model */
 .models .model table {
     width: 100%;
-    margin-bottom: 10px; /* Space between table and button */
-    border-collapse: collapse; /* Ensure borders are tightly packed */
+    margin-bottom: 10px; 
+    border-collapse: collapse; 
 }
 
 /* Styling for table cells */
 .models .model table th, .models .model table td {
     padding: 5px;
-    text-align: left; /* Align text to the left */
-    font-size: 14px; /* Smaller font size for readability */
+    text-align: left; 
+    font-size: 14px; 
 }
 
 /* Styling for the "Learn More" button */
@@ -284,36 +283,35 @@ section img {
     margin-top: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff; /* Blue color */
-    color: white; /* White text */
+    background-color: #007bff; 
+    color: white; 
     cursor: pointer;
-    font-size: 14px; /* Consistent font size */
-    transition: background-color 0.3s; /* Smooth background-color transition */
+    font-size: 14px; 
+    transition: background-color 0.3s; 
 }
 
-/* Hover effect on "Learn More" button */
 .learn-more-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 .video-gallery {
     display: flex;
-    gap: 300px;  /* Adds horizontal space between videos */
+    gap: 300px;  
     overflow-x: auto;
     padding: 10px 0;
 }
 
 .video {
-    width: 500px;  /* Increased video width */
-    height: 280px;  /* Adjust height as needed */
+    width: 500px;  
+    height: 280px; 
     flex-shrink: 0;
-    margin-right: 20px; /* Adds space to the right of each video */
+    margin-right: 20px; 
 
 }
 
 .video video {
     width: 100%;
-    height: 100%;  /* Adjusts the video size based on the container's width and height */
+    height: 100%;  
     border-radius: 5px;
 }
 /* Common Section Styling */
@@ -360,15 +358,15 @@ h2 {
 /* Map and Contact Form Layout */
 .review-map {
     display: flex;
-    justify-content: space-between; /* Spreads out the map and form */
+    justify-content: space-between; 
     padding: 20px 0;
-    flex-wrap: wrap; /* Ensures proper stacking on smaller screens */
+    flex-wrap: wrap; 
 }
 
 /* Map Container */
 .review-map {
     display: flex;
-    gap: 10px; /* Reduced gap between map and contact form */
+    gap: 10px; 
     justify-content: center;
     padding: 20px 0;
 }
@@ -391,15 +389,15 @@ h2 {
 
 .contact-form {
     width: 100%;
-    max-width: 400px; /* Keeps it responsive */
+    max-width: 400px; 
     padding: 20px;
-    background: linear-gradient(to bottom, #000, #fff); /* Black and white gradient */
+    background: linear-gradient(to bottom, #000, #fff); 
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
-    box-sizing: border-box; /* Ensures padding doesn't affect the size */
-    overflow: hidden; /* Removes overflow */
-    max-height: none; /* Remove height restrictions */
+    box-sizing: border-box; 
+    overflow: hidden; 
+    max-height: none; 
     margin-left: 500px;
 }
 
@@ -414,7 +412,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow: hidden; /* Prevents overflow from the form container */
+    overflow: hidden; 
 }
 
 .contact-form label {
@@ -432,7 +430,7 @@ h2 {
     background-color: #fff;
     color: #333;
     box-sizing: border-box;
-    resize: none; /* Removes textarea resize for a better layout */
+    resize: none; 
 }
 
 .contact-form button {
@@ -479,5 +477,5 @@ footer .social-icon {
 }
 
 footer .social-icon:hover {
-    color: #ff6600;  /* Change color on hover */
+    color: #ff6600;  
 }
