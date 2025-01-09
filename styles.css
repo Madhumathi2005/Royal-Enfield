@@ -1,0 +1,482 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keep it above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+header .logo img {
+    height: 60px;
+    width: auto; /* Maintain logo aspect ratio */
+}
+
+header nav {
+    flex-grow: 1; /* Allow navigation to expand */
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex; 
+    gap: 40px; 
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: bold; /* Optional: Add bold styling for better visibility */
+}
+
+header nav ul li a:hover {
+    background-color: #444; /* Highlight on hover */
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+body {
+    padding-top: 80px; /* Prevent content overlap with fixed header */
+}
+
+/* Home Section Styles */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center the content */
+    text-align: left; /* Align text to the left */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds subtle overlay for better contrast */
+}
+
+/* Background Image */
+#home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire section */
+    z-index: -1; /* Place the image behind the content */
+}
+
+/* Home Content Styling */
+#home .home-content {
+    z-index: 1;
+    color: #fff;
+    font-family: 'Lora', serif; /* Updated font family */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Google Fonts integration */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+/* Home Content Header Styling */
+#home h1 {
+    font-size: 3.8rem; /* Slightly larger font size */
+    margin: 0;
+    font-weight: 700; /* Bold weight for better emphasis */
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Optional for style */
+    animation: fadeInUp 1s ease-out; /* Added animation to title */
+}
+
+/* Home Content Paragraph Styling */
+#home p {
+    font-size: 1.5rem;
+    margin: 15px 0 0;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-shadow: none; /* Removed shadow for the paragraph */
+    animation: fadeInUp 1.5s ease-out; /* Added animation to description */
+}
+
+/* Button Styling */
+#home button {
+    margin-top: 20px;
+    font-size: 1.3rem; /* Slightly bigger font for visibility */
+    padding: 15px 35px; /* Increased padding for bigger button */
+    background-color: #fff; /* Set background to white */
+    border: none;
+    border-radius: 8px; /* Increased border-radius for smooth rounded corners */
+    color: #333; /* Dark color for the text to contrast with white background */
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+#home button:hover {
+    background-color: #f1f1f1; /* Lighter shade on hover */
+    color: #ff6600; /* Change text color to match the original button color */
+    transform: scale(1.1); /* Slightly stronger scaling effect */
+}
+
+
+/* Fade-In Animation for Content */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* About Section Styles */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #e6d8d8;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 800px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.about-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for the overall model container */
+.models {
+    display: flex;
+    justify-content: flex-start; /* Align models horizontally */
+    gap: 40px; /* Space between models */
+    overflow-x: auto; /* Horizontal scrolling */
+    padding: 10px 0;
+    max-width: 100%;
+}
+
+/* Model box styling */
+.models .model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; /* Reduced width for better overall fitting */
+    height: 580px; /* Adjusted height to look balanced */
+    padding: 20px; /* Padding inside the box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    background-color: #fff; /* Background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Hover effect on model */
+.models .model:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    background-color: #f5f5f5; /* Slight background change on hover */
+}
+
+/* Styling for model images */
+.models .model img {
+    width: 100%; /* Adjust image width to the container */
+    height: 200px; /* Reduced height for proportional balance */
+    object-fit: cover; /* Ensure the image fits well without distortion */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Margin below image */
+}
+
+/* Styling for table inside each model */
+.models .model table {
+    width: 100%;
+    margin-bottom: 10px; /* Space between table and button */
+    border-collapse: collapse; /* Ensure borders are tightly packed */
+}
+
+/* Styling for table cells */
+.models .model table th, .models .model table td {
+    padding: 5px;
+    text-align: left; /* Align text to the left */
+    font-size: 14px; /* Smaller font size for readability */
+}
+
+/* Styling for the "Learn More" button */
+.learn-more-btn {
+    padding: 8px 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text */
+    cursor: pointer;
+    font-size: 14px; /* Consistent font size */
+    transition: background-color 0.3s; /* Smooth background-color transition */
+}
+
+/* Hover effect on "Learn More" button */
+.learn-more-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.video-gallery {
+    display: flex;
+    gap: 300px;  /* Adds horizontal space between videos */
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.video {
+    width: 500px;  /* Increased video width */
+    height: 280px;  /* Adjust height as needed */
+    flex-shrink: 0;
+    margin-right: 20px; /* Adds space to the right of each video */
+
+}
+
+.video video {
+    width: 100%;
+    height: 100%;  /* Adjusts the video size based on the container's width and height */
+    border-radius: 5px;
+}
+/* Common Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Reviews Section */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.review p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.review strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Map and Contact Form Layout */
+.review-map {
+    display: flex;
+    justify-content: space-between; /* Spreads out the map and form */
+    padding: 20px 0;
+    flex-wrap: wrap; /* Ensures proper stacking on smaller screens */
+}
+
+/* Map Container */
+.review-map {
+    display: flex;
+    gap: 10px; /* Reduced gap between map and contact form */
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-left: 150px;
+}
+
+/* Map iframe Styling */
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 400px; /* Keeps it responsive */
+    padding: 20px;
+    background: linear-gradient(to bottom, #000, #fff); /* Black and white gradient */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    box-sizing: border-box; /* Ensures padding doesn't affect the size */
+    overflow: hidden; /* Removes overflow */
+    max-height: none; /* Remove height restrictions */
+    margin-left: 500px;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden; /* Prevents overflow from the form container */
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    resize: none; /* Removes textarea resize for a better layout */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icon {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+    color: #ff6600;  /* Change color on hover */
+}
